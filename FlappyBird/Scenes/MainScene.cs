@@ -32,6 +32,7 @@ public class MainScene : Scene
     private Sound _scoreSound;
 
     public static bool Playing;
+    private Sprite.DropShadow _dropShadow;
     
     protected override void Initialize()
     {
@@ -40,10 +41,12 @@ public class MainScene : Scene
         // The background image doesn't reach the full height of the screen, solution is to just set our clear colour
         // to the same colour as the background image.
         World.ClearColor = Utils.ColorFromHex(0x0099CC);
+        
+        _dropShadow = new Sprite.DropShadow(new Vector2(4, 3), 96);
 
         // Player entity - add a sprite and player component, then add it to the scene.
         Entity player = new Entity();
-        player.AddComponent(new Sprite(new Texture2D("Content/fbird.png")));
+        player.AddComponent(new Sprite(new Texture2D("Content/fbird.png")) { Shadow = _dropShadow });
         player.AddComponent(new Player());
         AddEntity("Player", player);
         
@@ -142,14 +145,14 @@ public class MainScene : Scene
             {
                 Position = new Vector3(x, randomY, depth)
             });
-            bottomPipe.AddComponent(new Sprite(_pipeTexture));
+            bottomPipe.AddComponent(new Sprite(_pipeTexture) { Shadow = _dropShadow });
             bottomPipe.AddComponent(new Pipe(true, player));
 
             Entity topPipe = new Entity(new Transform()
             {
                 Position = new Vector3(x, randomY - PipeGap, depth)
             });
-            topPipe.AddComponent(new Sprite(_pipeTexture) { Flip = SpriteFlipMode.FlipY });
+            topPipe.AddComponent(new Sprite(_pipeTexture) { Flip = SpriteFlipMode.FlipY, Shadow = _dropShadow });
             topPipe.AddComponent(new Pipe(false, player));
 
             // We can add entities without names - this is very useful for stuff like this!
