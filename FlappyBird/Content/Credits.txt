@@ -1,0 +1,6 @@
+Flappy bird png from https://www.pngitem.com/so/flappy-bird/
+Pipe png from http://tylerhawkins.info/201R/QrappyBird/#/
+Background png from https://github.com/akhil-code/flappy-bird-neuro-evolution/issues/1
+Ground png from https://flappycreator.com/
+Roboto font https://fonts.google.com/specimen/Roboto
+Sound effects made with https://sfxr.me/
