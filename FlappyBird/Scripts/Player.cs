@@ -70,7 +70,8 @@ public class Player : Component
         if (MainScene.Playing)
         {
             // Make the player jump when the key is pressed.
-            if (Input.KeyPressed(Keys.Space) || Input.MouseButtonPressed(MouseButtons.Left) && !GameOver)
+            if (Input.KeyPressed(Keys.Space) || Input.MouseButtonPressed(MouseButtons.Left) ||
+                Input.ControllerButtonPressed(ControllerButton.A) && !GameOver)
             {
                 _velocity = -JumpVelocity;
                 _jump.Play();

@@ -109,7 +109,8 @@ public class MainScene : Scene
 
             UI.Label(Anchor.Center, new Point(0, (int) CubicMath.Lerp(-200, 360, _timer * _timer * 2)), "Tap to start",
                 24);
-            if (Input.KeyPressed(Keys.Space) || Input.MouseButtonPressed(MouseButtons.Left))
+            if (Input.KeyPressed(Keys.Space) || Input.MouseButtonPressed(MouseButtons.Left) ||
+                Input.ControllerButtonPressed(ControllerButton.A))
                 _timer += float.Epsilon;
             if (_timer >= 0.75)
             {
@@ -121,7 +122,8 @@ public class MainScene : Scene
         // Restart the scene if the game is over.
         if (GetEntity("Player").GetComponent<Player>().GameOver)
         {
-            if (Input.KeyPressed(Keys.Space) || Input.MouseButtonPressed(MouseButtons.Left))
+            if (Input.KeyPressed(Keys.Space) || Input.MouseButtonPressed(MouseButtons.Left) ||
+                Input.ControllerButtonPressed(ControllerButton.A))
                 SceneManager.SetScene("main");
             
             return;
