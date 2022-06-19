@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlappyBird", "FlappyBird\FlappyBird.csproj", "{1B9753BA-9ED2-455A-9006-E7717EDBC128}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cubic", "Cubic\Cubic\Cubic.csproj", "{7807254F-DF9E-4CBD-A217-7D0F3BF69ED8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,9 +12,5 @@ Global
 		{1B9753BA-9ED2-455A-9006-E7717EDBC128}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B9753BA-9ED2-455A-9006-E7717EDBC128}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B9753BA-9ED2-455A-9006-E7717EDBC128}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7807254F-DF9E-4CBD-A217-7D0F3BF69ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7807254F-DF9E-4CBD-A217-7D0F3BF69ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7807254F-DF9E-4CBD-A217-7D0F3BF69ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7807254F-DF9E-4CBD-A217-7D0F3BF69ED8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

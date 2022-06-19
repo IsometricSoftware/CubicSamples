@@ -8,17 +8,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Cubic\Cubic\Cubic.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
       <None Update="Content\fbird.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
       <None Update="Content\pipe.png">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="Content\Roboto-Regular.ttf">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
       <None Update="Content\score.wav">
@@ -36,6 +29,10 @@
       <None Update="Content\jump.wav">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Cubic" Version="1.0.0-a2" />
     </ItemGroup>
 
 </Project>

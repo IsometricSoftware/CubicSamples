@@ -84,8 +84,7 @@ public class MainScene : Scene
         _pipeTexture = new Texture2D("Content/pipe.png");
         _random = new Random();
 
-        // Load our font - to use the UI, a font must be defined. A font is not included with cubic.
-        UI.Theme.Font = new Font("Content/Roboto-Regular.ttf");
+        UI.Theme.TextColor = Color.White;
         _score = 0;
 
         _scoreSound = new Sound(Game.AudioDevice, "Content/score.wav");
