@@ -32,7 +32,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Cubic" Version="1.0.0-a2" />
+      <PackageReference Include="Cubic" Version="0.1.0" />
     </ItemGroup>
 
 </Project>
