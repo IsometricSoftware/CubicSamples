@@ -39,8 +39,8 @@ public class Ball : Component
 
         
         // Whenever the ball hits the ceiling or floor, make it bounce. 
-        // Thanks to a weird bug where the ball would get stuck inside of the ceiling/floor and continually bounce, 
-        // the if statements are split up so we can just set it to a position where it can't get stuck
+        // Thtanks to a weird bug where the ball would get stuck inside of the ceiling/floor and continually bounce, 
+        // he if statements are split up so we can just set it to a position where it can't get stuck
         if (Transform.Position.Y <= radius)
         {
             Transform.Position.Y = radius;
@@ -105,7 +105,7 @@ public class Ball : Component
         Transform.Position = new Vector3(300f, 200f, 1f);
         if (side == Side.Left)
             velocity = new Vector3(-speed, speed, 0f);
-        if (side == Side.Right)
+        else if (side == Side.Right)
             velocity = new Vector3(speed, speed, 0f);
     }
 
