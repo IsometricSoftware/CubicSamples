@@ -42,9 +42,7 @@ public class MainScene : Scene
 
         ball.AddComponent(new Sprite(ballTexture));
         ball.AddComponent(new Ball(12.5f, BallSpeed));
-        
-        //ball.AddComponent(new AudioSource(("score", "combobreak.wav")));
-        
+
         leftPlayer.AddComponent(new Sprite(paddleTexture));
         leftPlayer.AddComponent(new Paddle(Side.Left, 500f));
         

@@ -29,7 +29,7 @@ public class Ball : Component
         base.Initialize();
         paddles = GetEntitiesWithComponent<Paddle>();
         Serve(Side.Right);
-        //scoreSound = new Sound(Game.AudioDevice, "Content/combobreak.wav");
+        scoreSound = new Sound(Game.AudioDevice, "Content/score.wav");
     }
 
     protected override void Update()
@@ -59,7 +59,7 @@ public class Ball : Component
         {
             Serve(Side.Left);
             paddles[1].GetComponent<Paddle>().Score++;
-            //scoreSound.Play();
+            scoreSound.Play();
 
         }
 
@@ -67,7 +67,7 @@ public class Ball : Component
         {
             Serve(Side.Right);
             paddles[0].GetComponent<Paddle>().Score++;
-            //scoreSound.Play();
+            scoreSound.Play();
         }
         
         // Check if the ball has collided with either paddle.

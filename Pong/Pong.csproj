@@ -17,7 +17,7 @@
       <None Update="Content\square.ttf">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Content\combobreak.wav">
+      <None Update="Content\score.wav">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
